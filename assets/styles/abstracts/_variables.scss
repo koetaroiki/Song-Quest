@@ -1,0 +1,29 @@
+// 変数（カラー、ブレイクポイントなど）
+:root {
+  // カラー
+  --color-primary: #5a32b4;
+  --color-primary_dark: #322846;
+  // --color-secondary: #6c757d;
+  --color-fc: #cfcdd2;
+  --color-gray_dark: #1e1e1e;
+  --color-dark: #141414;
+  --color-white_a: rgba(255, 255, 255, 0.2);
+  
+  // 余白・サイズ
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-bgr: 32px;
+
+  --pd-lg: 24px;
+  --pd-bottom_md: clamp(32px, calc(100 / (1600 / 100vw)), 100px);
+
+
+  // フォントサイズ
+  --fS-md: 18px; 
+  --fS-lg: 32px; 
+  --fS-bgr: 48px; 
+  
+  // アニメーション
+  //--transition-base: all 0.3s ease;
+}

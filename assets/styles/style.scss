@@ -1,0 +1,9 @@
+
+@use "abstracts/variables"; //変数
+@use "parts/layout"; // レイアウト
+@use "parts/common"; // 共通設定
+@use "parts/playlist"; //プレイリスト
+@use "parts/tab"; //タブ
+@use "parts/profile"; //プロフィール
+// @use "parts/modal"; //modal
+@use "parts/utility"; // 調整用

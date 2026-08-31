@@ -1,0 +1,38 @@
+.c-section_md {
+  padding-bottom: var(--pd-bottom_md);
+}
+
+.c-circle{
+  border-radius: 50%;
+}
+
+.c-button{
+  border:1px solid #fff;
+  color: #fff;
+  font-size: 24px;
+  padding: 5px;
+  width: 100%;
+}
+
+.c-main_player{
+  width: min(1600px, 100%);
+  aspect-ratio: 16 / 9;
+  height: auto;
+}
+
+.p-send_button{
+  background: #5517d1;
+  border-radius: 50%;;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -20px;
+    z-index: 100;
+  &_outer{
+    display: flex;
+    // justify-content: center;
+    justify-content: space-around;
+  }
+}

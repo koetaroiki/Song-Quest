@@ -1,0 +1,27 @@
+.tab{
+  &_item{
+    background: var(--color-primary_dark);
+    font-size: var(--space-lg);
+    padding: 10px;
+    width: 50%;
+    color: var(--color-white_a);
+    &.is-active{
+    background: var(--color-primary);
+    color: var(--color-fc);
+    }
+    &_outer{
+      border-bottom: 2px solid var(--color-primary);
+      display: flex;
+    }
+  }
+  &_panel{
+    display: none;
+    height:100vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &.is-active {
+      display: block;
+    }
+  }
+}

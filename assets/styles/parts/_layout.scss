@@ -1,0 +1,55 @@
+//footerを最下部に固定するレイアウト
+.lyt-global_container {
+  display: grid;
+  grid-template: 
+    "header" auto
+    "main  " 1fr
+    "footer" auto;
+  min-height: 100dvh;
+  // height: 100vh;;
+}
+
+.lyt-header{
+  background: var(--color-primary);
+  color: #fff;
+  grid-area: header;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+}
+.lyt-main{
+  grid-area: main;
+  overflow-y: auto;
+  padding: var(--pd-bottom_md) 32px;
+}
+.lyt-contents{
+  color: var(--color-fc);
+  margin: 0 auto;
+  // width: min(100%, 1280px);
+}
+.lyt-footer {
+  background: var(--color-dark);
+  color: #fff;
+  grid-area: footer;
+  height: 80px;
+}
+
+/*
+<div class="lyt-global_container">
+  <header class="lyt-header">
+    header
+  </header>
+
+  <main class="lyt-main">
+    <div class="lyt-contents">
+      contents
+    </div>
+  </main>
+
+  <footer class="lyt-footer">
+    footer
+  </footer>
+</div>
+*/

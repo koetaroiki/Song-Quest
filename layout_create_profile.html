@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>create profile</title>
+</head>
+
+<body>
+  <h2 class="c-page-title">アカウント作成</h2>
+  <form id="signup-form">
+    <div>
+      <label>名前</label>
+      <input type="text" name="name" required>
+    </div>
+    <div>
+      <label>プロフィール写真</label>
+      <input type="file" name="avatar" accept="image/*">
+    </div>
+    <div>
+      <label>好きなミュージシャン</label>
+      <input type="text" name="tags">
+    </div>
+    <div>
+      <label>コメント</label>
+      <textarea name="comment"></textarea>
+    </div>
+    <div>
+      <label>最近のお気に入り動画（YouTube動画ID）</label>
+      <input type="text" name="favorite_video" placeholder="例: dQw4w9WgXcQ">
+    </div>
+    <div>
+      <label>Favorite playlist ID</label>
+      <input type="text" name="fav_playlist">
+    </div>
+    <div>
+      <label>Recommended playlist ID</label>
+      <input type="text" name="rec_playlist">
+    </div>
+    <button class="c-button" type="submit">登録</button>
+  </form>
+  <div id="userList"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>layout</title>
+  <link rel="stylesheet" href="assets/styles/vender/css-reset.css">
+  <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+
+<body>
+  <div class="lyt-global_container">
+    <header class="lyt-header">
+      header
+    </header>
+
+    <main class="lyt-main">
+      <div class="lyt-contents">
+        <!-- プロフィール -->
+        <div class="p-profile">
+          <div class="p-profile_image">
+            <img id="avatar" src="assets/images/poty.png">
+          </div>
+          <p id="name" class="p-profile_name">potey</p>
+          <p id="tags" class="p-profile_tag">#tag, #tag, #tag, #tag, #tag, #tag, #tag, #tag, #tag, #tag</p>
+          <p id="comment" class="p-profile_comment">
+            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          </p>
+        </div>
+
+        <!-- 最近気に入っている一曲 -->
+        <div class="p-recent_favorites">
+          <p>Recent Favorites</p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ewOPQZZn4SY?si=jPrmSZ2dQrF-JtTj"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div id="favorite_video"></div>
+        </div>
+
+        <div id="fav_playlist"></div>
+        <div id="rec_playlist"></div>
+
+        <div class="p-tab">
+          <div class="p-tab_tabs_outer">
+            <button class="p-tab_tabs active">Favorite List</button>
+            <button class="p-tab_tabs">Recommended List</button>
+          </div>
+          <div id="list1" class="p-tab_item active">
+            <div class="u-text_right"><a
+                href="https://youtube.com/playlist?list=PLx3npu-SkDxyId90EbAiP7henKPFf2J2F&si=YXc3t2qmWzbOinIt"
+                target="TARGET_NEW_WINDOW">YouTube で見る</a></div>
+            <ul id="tab-list1-items"></ul>
+          </div>
+          <div id="list2" class="p-tab_item">
+            <div class="u-text_right"><a
+                href="https://youtube.com/playlist?list=PLx3npu-SkDxw0SLPcvZ7Sn4CawFsfBjCQ&si=ZybgE0LyfMdux_15"
+                target="TARGET_NEW_WINDOW">YouTube で見る</a></div>
+            <ul id="tab-list2-items"></ul>
+          </div>
+          <div id="player" style="height:100vh"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="lyt-footer">
+      footer
+    </footer>
+  </div>
+
+  <script src="/js/tab.js"></script>
+</body>
+
+</html>

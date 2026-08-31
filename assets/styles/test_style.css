@@ -1,0 +1,232 @@
+@charset "UTF-8";
+:root {
+  --color-primary: #5a32b4;
+  --color-primary_dark: #322846;
+  --color-fc: #cfcdd2;
+  --color-gray_dark: #1e1e1e;
+  --color-dark: #141414;
+  --color-white_a: rgba(255, 255, 255, 0.2);
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-bgr: 32px;
+  --pd-lg: 24px;
+  --pd-bottom_md: clamp(32px, calc(100 / (1600 / 100vw)), 100px);
+  --fS-md: 18px;
+  --fS-lg: 32px;
+  --fS-bgr: 48px;
+}
+
+.lyt-global_container {
+  display: grid;
+  grid-template: "header" auto "main  " 1fr "footer" auto;
+  min-height: 100dvh;
+}
+
+.lyt-header {
+  background: var(--color-primary);
+  color: #fff;
+  grid-area: header;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+}
+
+.lyt-main {
+  grid-area: main;
+  overflow-y: auto;
+  padding: var(--pd-bottom_md) 32px;
+}
+
+.lyt-contents {
+  color: var(--color-fc);
+  margin: 0 auto;
+}
+
+.lyt-footer {
+  background: var(--color-dark);
+  color: #fff;
+  grid-area: footer;
+  height: 80px;
+}
+
+/*
+<div class="lyt-global_container">
+  <header class="lyt-header">
+    header
+  </header>
+
+  <main class="lyt-main">
+    <div class="lyt-contents">
+      contents
+    </div>
+  </main>
+
+  <footer class="lyt-footer">
+    footer
+  </footer>
+</div>
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-gray_dark);
+  color: var(--color-fc);
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: normal;
+}
+
+/* 音だけ再生（見えないプレイヤー） */
+#player {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  left: -9999px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: rgba(47, 45, 45, 0.5);
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.adj-thumb {
+  width: 240px;
+  cursor: pointer;
+}
+
+.title {
+  flex: 1;
+  font-size: 14px;
+}
+
+.progress-wrapper {
+  width: 100%;
+  height: 6px;
+  background: #403f3f;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: #5517d1;
+}
+
+.tab_item {
+  background: var(--color-primary_dark);
+  font-size: var(--space-lg);
+  padding: 10px;
+  width: 50%;
+  color: var(--color-white_a);
+}
+.tab_item.is-active {
+  background: var(--color-primary);
+  color: var(--color-fc);
+}
+.tab_item_outer {
+  border-bottom: 2px solid var(--color-primary);
+  display: flex;
+}
+.tab_panel {
+  display: none;
+  height: 100vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.tab_panel.is-active {
+  display: block;
+}
+
+.p-profile {
+  text-align: center;
+}
+.p-profile_name {
+  font-size: 64px;
+  font-weight: bold;
+}
+.p-profile_image {
+  display: inline-block;
+}
+.p-profile_image > img {
+  border-radius: 50%;
+}
+
+.p-recent_favorites {
+  text-align: center;
+}
+
+.c-section_md {
+  padding-bottom: var(--pd-bottom_md);
+}
+
+.c-circle {
+  border-radius: 50%;
+}
+
+.c-button {
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 24px;
+  padding: 5px;
+  width: 100%;
+}
+
+.c-main_player {
+  width: min(1600px, 100%);
+  aspect-ratio: 16/9;
+  height: auto;
+}
+
+.p-send_button {
+  background: #5517d1;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -20px;
+  z-index: 100;
+}
+.p-send_button_outer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.u-tar {
+  text-align: right;
+}/*# sourceMappingURL=test_style.css.map */

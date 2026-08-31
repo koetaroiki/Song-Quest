@@ -1,0 +1,23 @@
+.p-profile{
+  text-align: center;
+  &_name{
+    font-size: 64px;
+    font-weight: bold;
+  }
+  &_image{
+    display: inline-block;
+    & > img{
+      border-radius: 50%;
+    }
+  }
+}
+
+.p-recent_favorites{
+  text-align: center;
+}
+
+// .p-recent_favorites{
+//   font-size: var(--fS-lg);
+//   padding: 0 0 var(--pd-bottom_md);
+//   text-align: center;
+// }
