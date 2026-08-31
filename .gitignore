@@ -1,2 +1,3 @@
 # APIキーなどを含む設定ファイル
 config.js
+.vscode/
