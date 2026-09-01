@@ -11,7 +11,7 @@
   --space-lg: 24px;
   --space-bgr: 32px;
   --pd-lg: 24px;
-  --pd-bottom_md: clamp(32px, calc(100 / (1600 / 100vw)), 100px);
+  --section-pd_md: clamp(32px, calc(100 / (1600 / 100vw)), 100px);
   --fS-md: 18px;
   --fS-lg: 32px;
   --fS-bgr: 48px;
@@ -37,7 +37,7 @@
 .lyt-main {
   grid-area: main;
   overflow-y: auto;
-  padding: var(--pd-bottom_md) 32px;
+  padding: clamp(32px, 6.25vw, 100px) clamp(8px, 2vw, 32px);
 }
 
 .lyt-contents {
@@ -190,7 +190,7 @@ li {
 }
 
 .c-section_md {
-  padding-bottom: var(--pd-bottom_md);
+  padding-bottom: var(--section-pd_md);
 }
 
 .c-circle {
