@@ -6,9 +6,8 @@
   // --color-secondary: #6c757d;
   --color-fc: #cfcdd2;
   --color-gray_dark: #1e1e1e;
-  --color-dark: #141414;
   --color-white_a: rgba(255, 255, 255, 0.2);
-  
+
   // 余白・サイズ
   --space-sm: 8px;
   --space-md: 16px;
@@ -16,6 +15,8 @@
   --space-bgr: 32px;
 
   --pd-lg: 24px;
+  
+  --lyt-footer: #141414;
 
   --section-pd_md: clamp(32px, calc(100 / (1600 / 100vw)), 100px);
 

@@ -4,13 +4,13 @@
   --color-primary_dark: #322846;
   --color-fc: #cfcdd2;
   --color-gray_dark: #1e1e1e;
-  --color-dark: #141414;
   --color-white_a: rgba(255, 255, 255, 0.2);
   --space-sm: 8px;
   --space-md: 16px;
   --space-lg: 24px;
   --space-bgr: 32px;
   --pd-lg: 24px;
+  --lyt-footer: #141414;
   --section-pd_md: clamp(32px, calc(100 / (1600 / 100vw)), 100px);
   --fS-md: 18px;
   --fS-lg: 32px;
@@ -24,7 +24,7 @@
 }
 
 .lyt-header {
-  background: var(--color-primary);
+  background: #5a32b4;
   color: #fff;
   grid-area: header;
   height: 56px;
@@ -41,12 +41,12 @@
 }
 
 .lyt-contents {
-  color: var(--color-fc);
+  color: #cfcdd2;
   margin: 0 auto;
 }
 
 .lyt-footer {
-  background: var(--color-dark);
+  background: #141414;
   color: #fff;
   grid-area: footer;
   height: 80px;

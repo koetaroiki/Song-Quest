@@ -10,7 +10,7 @@
 }
 
 .lyt-header{
-  background: var(--color-primary);
+  background: #5a32b4;
   color: #fff;
   grid-area: header;
   height: 56px;
@@ -22,14 +22,14 @@
 .lyt-main{
   grid-area: main;
   overflow-y: auto;
-  padding: clamp(32px, calc(100 / (1600 / 100vw)), 100px) clamp(8px, calc(32 / (1600 / 100vw)), 32px);;
+  padding: clamp(32px, calc(100 / (1600 / 100vw)), 100px) clamp(8px, calc(32 / (1600 / 100vw)), 32px);
 }
 .lyt-contents{
-  color: var(--color-fc);
+  color: #cfcdd2;
   margin: 0 auto;
 }
 .lyt-footer {
-  background: var(--color-dark);
+  background: #141414;
   color: #fff;
   grid-area: footer;
   height: 80px;
