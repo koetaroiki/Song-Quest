@@ -1,12 +1,12 @@
 .p-profile{
   text-align: center;
   &_name{
-    font-size: 64px;
+    font-size: clamp(32px, calc(64 / (1000 / 100vw)), 64px);
     font-weight: bold;
   }
   &_image{
     display: inline-block;
-    width: clamp(250px, calc(500 / (1600 / 100vw)), 500px);
+    width: clamp(250px, calc(500 / (1280 / 100vw)), 500px);
     & > img{
       border-radius: 50%;
     }

@@ -175,12 +175,12 @@ li {
   text-align: center;
 }
 .p-profile_name {
-  font-size: 64px;
+  font-size: clamp(32px, 6.4vw, 64px);
   font-weight: bold;
 }
 .p-profile_image {
   display: inline-block;
-  width: clamp(250px, 31.25vw, 500px);
+  width: clamp(250px, 39.0625vw, 500px);
 }
 .p-profile_image > img {
   border-radius: 50%;
