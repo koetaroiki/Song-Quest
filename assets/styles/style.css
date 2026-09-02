@@ -180,6 +180,7 @@ li {
 }
 .p-profile_image {
   display: inline-block;
+  width: clamp(250px, 31.25vw, 500px);
 }
 .p-profile_image > img {
   border-radius: 50%;
