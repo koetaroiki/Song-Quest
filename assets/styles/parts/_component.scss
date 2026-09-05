@@ -20,19 +20,3 @@
   height: auto;
 }
 
-.p-send_button{
-  background: #5517d1;
-  border-radius: 50%;;
-  width: 80px;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: -20px;
-    z-index: 100;
-  &_outer{
-    display: flex;
-    // justify-content: center;
-    justify-content: space-around;
-  }
-}

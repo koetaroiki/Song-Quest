@@ -1,3 +1,25 @@
+.p-send_button{
+  background: #5517d1;
+  border-radius: 50%;;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -30px;
+    z-index: 100;
+  &_outer{
+    display: flex;
+    // justify-content: center;
+    justify-content: space-around;
+    padding-top: 30px;
+    position: relative;
+  }
+}
+
+
+
 // .p-profile{
 //   text-align: center;
 //   padding: 100px 0 50px;
