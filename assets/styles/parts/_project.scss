@@ -6,15 +6,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: -30px;
+  position: relative;
+  // top: -50%;
+  transform:  translateY(-70%);
     z-index: 100;
   &_outer{
     display: flex;
     // justify-content: center;
     justify-content: space-around;
     padding-top: 30px;
-    position: relative;
+    // position: relative;
   }
 }
 
