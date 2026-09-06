@@ -230,6 +230,19 @@ li {
   padding-top: 30px;
 }
 
+.lyt-header,
+.lyt-footer {
+  transition: transform 0.3s ease;
+}
+
+.lyt-header.is-hidden {
+  transform: translateY(-100%);
+}
+
+.lyt-footer.is-hidden {
+  transform: translateY(100%);
+}
+
 .u-tar {
   text-align: right;
 }/*# sourceMappingURL=test_style.css.map */

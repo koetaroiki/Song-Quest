@@ -1,0 +1,12 @@
+.lyt-header,
+.lyt-footer {
+  transition: transform 0.3s ease;
+}
+
+.lyt-header.is-hidden {
+  transform: translateY(-100%);
+}
+
+.lyt-footer.is-hidden {
+  transform: translateY(100%);
+}
