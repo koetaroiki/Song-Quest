@@ -20,7 +20,7 @@
 .lyt-global_container {
   display: grid;
   grid-template: "header" auto "main  " 1fr "footer" auto;
-  min-height: 100dvh;
+  height: 100vh;
 }
 
 .lyt-header {
