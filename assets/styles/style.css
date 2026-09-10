@@ -77,6 +77,7 @@ body {
   background: var(--color-gray_dark);
   color: var(--color-fc);
   font-family: "Noto Sans JP", sans-serif;
+  overflow-y: hidden;
 }
 
 button {
