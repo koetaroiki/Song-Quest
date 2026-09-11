@@ -10,3 +10,7 @@
 .lyt-footer.is-hidden {
   transform: translateY(100%);
 }
+
+.lyt-global_container.is-scroll {
+  grid-template-rows: 0 1fr 0;
+}
