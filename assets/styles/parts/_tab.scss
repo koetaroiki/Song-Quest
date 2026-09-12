@@ -1,4 +1,5 @@
 .tab{
+
   &_item{
     background: var(--color-primary_dark);
     font-size: var(--space-lg);
@@ -11,6 +12,8 @@
     }
     &_outer{
       border-bottom: 2px solid var(--color-primary);
+      position: sticky;
+      top: 0;
       display: flex;
     }
   }

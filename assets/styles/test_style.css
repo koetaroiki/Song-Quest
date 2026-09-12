@@ -37,12 +37,12 @@
 .lyt-main {
   grid-area: main;
   overflow-y: auto;
-  padding: clamp(32px, 6.25vw, 100px) clamp(8px, 2vw, 32px);
 }
 
 .lyt-contents {
   color: #cfcdd2;
   margin: 0 auto;
+  padding: clamp(32px, 6.25vw, 100px) clamp(8px, 2vw, 32px);
 }
 
 .lyt-footer {
@@ -159,6 +159,8 @@ li {
 }
 .tab_item_outer {
   border-bottom: 2px solid var(--color-primary);
+  position: sticky;
+  top: 0;
   display: flex;
 }
 .tab_panel {
